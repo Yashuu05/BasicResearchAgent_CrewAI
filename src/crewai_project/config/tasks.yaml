@@ -1,0 +1,9 @@
+research_task:
+  description: >
+    Conduct thorough research about Artificial Intelligence. Use web search to find current,
+    credible and accurate information. The current year is 2026.
+  expected_output: >
+    A markdown report with clear sections: key trends, notable developments, involved tools or companies,
+    and applications. Aim for 100–200 words. No fenced code blocks around the whole document.
+  agent: researcher
+  output_file: output/report.md
