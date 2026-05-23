@@ -1,8 +1,11 @@
-import os
+import os, sys
+
+project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+    
 from pydantic import BaseModel
-
 from crewai.flow import Flow, listen, start
-
 from src.crewai_project.crew import ResearchCrew
 
 # Configure Ollama as the LLM provider for CrewAI
